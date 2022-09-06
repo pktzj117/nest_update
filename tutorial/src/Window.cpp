@@ -19,7 +19,8 @@
 // static const QString DEFS_URL = "https://raw.githubusercontent.com/"
 //                                 "alex-spataru/QSimpleUpdater/master/tutorial/"
 //                                 "definitions/updates.json";
-static const QString DEFS_URL = "";
+static const QString DEFS_URL
+    = "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/definitions/updates.json";
 
 //==============================================================================
 // Window::Window
@@ -97,6 +98,8 @@ void Window::checkForUpdates()
    m_updater->setUseCustomAppcast(DEFS_URL, customAppcast);
    m_updater->setDownloaderEnabled(DEFS_URL, downloaderEnabled);
    m_updater->setMandatoryUpdate(DEFS_URL, mandatoryUpdate);
+
+  
 
    /* Check for updates */
    m_updater->checkForUpdates(DEFS_URL);

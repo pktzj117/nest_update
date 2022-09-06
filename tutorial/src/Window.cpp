@@ -99,7 +99,7 @@ void Window::checkForUpdates()
    m_updater->setDownloaderEnabled(DEFS_URL, downloaderEnabled);
    m_updater->setMandatoryUpdate(DEFS_URL, mandatoryUpdate);
 
-  
+   qDebug() << "URL:" << DEFS_URL;
 
    /* Check for updates */
    m_updater->checkForUpdates(DEFS_URL);

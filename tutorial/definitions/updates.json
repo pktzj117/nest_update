@@ -10,28 +10,28 @@
     "osx": {
       "open-url": "",
       "latest-version": "1.12",
-      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/YesItWorks.jpg",
+      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/NEST_43_V1.12",
       "changelog": "This is an example changelog for Mac OS X. Go on...",
       "mandatory": true
     },
     "linux": {
       "open-url": "",
       "latest-version": "1.12",
-      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/YesItWorks.jpg",
+      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/NEST_43_V1.12",
       "changelog": "This is an example changelog for Linux. Go on...",
       "mandatory": true
     },
     "ios": {
       "open-url": "",
       "latest-version": "1.12",
-      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/YesItWorks.jpg",
+      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/NEST_43_V1.12",
       "changelog": "This is an example changelog for iOS. Go on...",
       "mandatory": true
     },
     "android": {
       "open-url": "",
       "latest-version": "1.12",
-      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/YesItWorks.jpg",
+      "download-url": "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/download/NEST_43_V1.12",
       "changelog": "This is an example changelog for Android. Go on...",
       "mandatory": true
     }

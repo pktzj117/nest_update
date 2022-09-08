@@ -11,7 +11,8 @@
 
 #include <QDebug>
 #include <QSimpleUpdater.h>
-
+#include <QSslSocket>
+#include <QDebug>
 //==============================================================================
 // Define the URL of the Update Definitions file
 //==============================================================================
@@ -19,8 +20,10 @@
 // static const QString DEFS_URL = "https://raw.githubusercontent.com/"
 //                                 "alex-spataru/QSimpleUpdater/master/tutorial/"
 //                                 "definitions/updates.json";
-static const QString DEFS_URL
-    = "https://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/definitions/updates.json";
+// static const QString DEFS_URL
+//     = "http://raw.githubusercontent.com/pktzj117/nest_update/master/tutorial/definitions/updates.json";
+
+static const QString DEFS_URL = "https://gitee.com/pktzj117/nest43_update/raw/master/tutorial/definitions/updates.json";
 
 //==============================================================================
 // Window::Window
@@ -31,7 +34,7 @@ Window::Window(QWidget *parent)
 {
    m_ui = new Ui::Window;
    m_ui->setupUi(this);
-
+   qDebug() << QSslSocket::sslLibraryBuildVersionString();
    setWindowTitle(qApp->applicationName());
 
    /* QSimpleUpdater is single-instance */
@@ -99,7 +102,11 @@ void Window::checkForUpdates()
    m_updater->setDownloaderEnabled(DEFS_URL, downloaderEnabled);
    m_updater->setMandatoryUpdate(DEFS_URL, mandatoryUpdate);
 
+   m_updater->setModuleName(DEFS_URL, "windows");
+
    qDebug() << "URL:" << DEFS_URL;
+   qDebug() << "version:" << version;
+   qDebug() << "downloaderEnabled:" << downloaderEnabled;
 
    /* Check for updates */
    m_updater->checkForUpdates(DEFS_URL);

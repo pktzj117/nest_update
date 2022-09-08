@@ -11,8 +11,8 @@
 int main(int argc, char **argv)
 {
    QApplication app(argc, argv);
-   app.setApplicationVersion("1.0");
-   app.setApplicationName("Bob's Badass App");
+   app.setApplicationVersion("1.1");
+   app.setApplicationName("NEST App");
 
    Window window;
    window.show();
